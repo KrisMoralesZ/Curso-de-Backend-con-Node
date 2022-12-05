@@ -13,5 +13,4 @@ app.get('/', (req, res) => {
 routerApi(app);
 
 app.listen(port, () => {
-  console.log('Mi port' + port)
 })

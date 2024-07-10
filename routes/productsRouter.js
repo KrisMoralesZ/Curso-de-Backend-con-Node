@@ -23,6 +23,7 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   const body = req.body;
+  const newProduct = service.create(body)
   res.status(201).json({
     message: 'created',
     data: body
